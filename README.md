@@ -6,4 +6,9 @@ This guide is for experimenting with transfer learning and deploying a machine l
 
 ## Links
 
-A link to the Jupyter notebook server will be posted during the workshop.
+- Access the ML server here: https://iotfuse-ml.ngrok.io/
+
+- Check out a live site here: https://iotfusedemo-app.imfast.io/
+
+- A link to the notebook will be posted during the workshop.
+
