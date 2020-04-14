@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IoTFuse2020 ML</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <h3>IoTFuse 2020 - COVID-19 Detection App</h3>
+            <p><small>A simple web app for trying out our trained classifier</small></p>
+        </div>
+
+        <div class="panel">
+            <input id="file-upload" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <label for="file-upload" id="file-drag" class="upload-box">
+                <div id="upload-caption">
+                    <center>Drop X-Ray here or click to select<br></center>
+                </div>
+                <img id="image-preview" class="hidden" />
+            </label>
+        </div>
+        
+        <div style="margin-bottom: 2rem;">
+            <button type="button" class="btn btn-dark" onclick="submitImage();">Analyze</button>
+            <button type="button" class="btn btn-dark" onclick="clearImage();">Reset</button>
+        </div>
+
+        <div id="image-box">
+            <img id="image-display" />
+            <div id="pred-result" class="hidden"></div>
+            <svg id="loader" class="hidden" viewBox="0 0 32 32" width="32" height="32">
+                <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+            </svg>
+        </div>
+
+        <div class="panel">
+            <div class="upload-tracker">
+                <span>Uploads so far:</span>
+                <span id="upload-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="/static/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+        <h4>Caution: This is only a demo to get you started. No detector should be taken seriously without any clinical trials.</h4>
+        <h5> © Madhu Tennakoon - IoTFuse 2020 Data Science Workshop</h5>
+</footer>
+
+</html>
