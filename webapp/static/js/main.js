@@ -1,4 +1,4 @@
-APP_ID = "covid19"
+APP_ID = "mymodel"
 
 //========================================================================
 // Drag and drop image handling
