@@ -12,3 +12,8 @@ This guide is for experimenting with transfer learning and deploying a machine l
 
 - A link to the notebook will be posted during the workshop.
 
+## ML Server Setup
+
+- Create a local Redis cache or set up a hosted service
+- export FLASK_APP=application.py
+- flask run
